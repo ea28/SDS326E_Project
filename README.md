@@ -5,9 +5,9 @@ This project predicts the rest-frame Lyman-alpha Equivalent Width ($EW_r$) of ga
 ## Data Preparation
 
 The initial dataset (`data.csv`, 11862 galaxies) was filtered based on data quality:
-*   Photometric fit $\chi^2_{phot} < 50$
-*   Lyα Signal-to-Noise ratio $sn > 5.5$
-*   Rest-frame Lyα Equivalent Width $EW_r < 500$
+*   Photometric fit &chi;<sup>2</sup><sub>phot</sub> < 50
+*   Ly&alpha; Signal-to-Noise ratio $sn > 5.5$
+*   Rest-frame Ly&alpha; Equivalent Width $EW_r < 500$
 This resulted in a final dataset of 1965 galaxies, split into 80% training (1572) and 20% testing (393) sets. Features were standardized using `StandardScaler` fitted on the training data.
 
 ## Features
@@ -17,11 +17,11 @@ This resulted in a final dataset of 1965 galaxies, split into 80% training (1572
 
 ### Explanatory Variables
 *   **`dust:Av`**: Dust attenuation in V-band (Mag).
-*   **`stellar_mass`**: Logarithm of galaxy stellar mass ($log_{10}(M_{\odot})$).
-*   **`sfr`**: Star Formation Rate ($M_{\odot}/yr$).
+*   **`stellar_mass`**: Logarithm of galaxy stellar mass (log<sub>10</sub>(M<sub>&odot;</sub>)).
+*   **`sfr`**: Star Formation Rate (M<sub>&odot;</sub>/yr).
 *   **`mass_weighted_age`**: Mass-weighted age of stellar population (Gyr).
 *   **`redshift`**: Galaxy redshift.
-*   **`delayed:age`**: Age parameter from delayed-$\tau$ SFH model ($log_{10}(Age [Myr])$).
+*   **`delayed:age`**: Age parameter from delayed-&tau; SFH model (log<sub>10</sub>(Age [Myr])).
 
 ## XGBoost Model Building
 
