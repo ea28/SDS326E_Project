@@ -5,23 +5,23 @@ This project predicts the rest-frame Lyman-alpha Equivalent Width ($EW_r$) of ga
 ## Data Preparation
 
 The initial dataset (`data.csv`, 11862 galaxies) was filtered based on data quality:
-*   Photometric fit χ²<0xE1><0xB5><0x96><0xE1><0xB5><0xAB><0xE1><0xB5><0x92><0xE1><0xB5><0x9C> < 50
-*   Lyα Signal-to-Noise ratio sn > 5.5
-*   Rest-frame Lyα Equivalent Width EW<0xE1><0xB5><0xA3> < 500
+*   Photometric fit $\chi^2_{phot} < 50$
+*   Ly&alpha; Signal-to-Noise ratio $sn > 5.5$
+*   Rest-frame Ly&alpha; Equivalent Width $EW_r < 500$
 This resulted in a final dataset of 1965 galaxies, split into 80% training (1572) and 20% testing (393) sets. Features were standardized using `StandardScaler` fitted on the training data.
 
 ## Features
 
 ### Target Variable
-*   **`EW_r`**: Rest-frame Equivalent Width (EW / (1 + z<0xE2><0x82><0x97>_<0xE1><0xB5><0xA2><0xE1><0xB5><0x90>)).
+*   **`EW_r`**: Rest-frame Equivalent Width (EW / (1 + $z_{Ly\alpha}$)).
 
 ### Explanatory Variables
 *   **`dust:Av`**: Dust attenuation in V-band (Mag).
-*   **`stellar_mass`**: Logarithm of the current stellar mass (log₁₀(M☉)).
-*   **`sfr`**: Star Formation Rate (M☉/yr).
+*   **`stellar_mass`**: Logarithm of the current stellar mass ($log_{10}(M_{\odot})$).
+*   **`sfr`**: Star Formation Rate ($M_{\odot}/yr$).
 *   **`mass_weighted_age`**: Mass-weighted age of the stellar population (Gyr).
 *   **`redshift`**: Galaxy redshift.
-*   **`delayed:age`**: Logarithm of the characteristic timescale from the delayed-τ star formation history model (log₁₀(τ [Myr])).
+*   **`delayed:age`**: Logarithm of the characteristic timescale from the delayed-$\tau$ star formation history model ($log_{10}(\tau)$ [Myr]).
 
 ## XGBoost Model Building
 
