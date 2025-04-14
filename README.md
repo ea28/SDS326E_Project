@@ -21,7 +21,7 @@ This resulted in a final dataset of 1965 galaxies, split into 80% training (1572
 *   **`sfr`**: Star Formation Rate ($M_{\odot}/yr$).
 *   **`mass_weighted_age`**: Mass-weighted age of the stellar population (Gyr).
 *   **`redshift`**: Galaxy redshift.
-*   **`delayed:age`**: Logarithm of the characteristic timescale from the delayed-$\tau$ star formation history model ($log_{10}(\tau)$ [Myr]).
+*   **`delayed:age`**: Logarithm of the characteristic timescale from the delayed- $\tau$ star formation history model ($log_{10}(\tau)$ [Myr]).
 
 ## XGBoost Model Building
 
