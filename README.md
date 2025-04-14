@@ -7,13 +7,13 @@ This project predicts the rest-frame Lyman-alpha Equivalent Width (\(EW_r\)) of 
 The initial dataset (`data.csv`, 11862 galaxies) was filtered based on data quality:
 *   Photometric fit \(\chi^2_{phot} < 50\)
 *   Lyα Signal-to-Noise ratio \(sn > 5.5\)
-*   Rest-frame Lyα Equivalent Width \(EW_r < 500\) Å
+*   Rest-frame Lyα Equivalent Width \(EW_r < 500\)
 This resulted in a final dataset of 1965 galaxies, split into 80% training (1572) and 20% testing (393) sets. Features were standardized using `StandardScaler` fitted on the training data.
 
 ## Features
 
 ### Target Variable
-*   **`EW_r`**: Rest-frame Equivalent Width (Å).
+*   **`EW_r`**: Rest-frame Equivalent Width.
 
 ### Explanatory Variables
 *   **`dust:Av`**: Dust attenuation in V-band (Mag).
@@ -42,14 +42,17 @@ This resulted in a final dataset of 1965 galaxies, split into 80% training (1572
 
 ### Test Set Performance
 *   **R²:** 0.514
-*   **RMSE:** 69.55 Å
-*   **MAE:** 47.95 Å
+*   **RMSE:** 69.55
+*   **MAE:** 47.95
 
 ### Feature Importance (SHAP)
-The most influential features according to mean absolute SHAP values are:
+The mean absolute SHAP values for all features are:
 1.  `sfr` (58.84)
 2.  `dust:Av` (54.90)
 3.  `mass_weighted_age` (39.28)
+4.  `redshift` (30.36)
+5.  `delayed:age` (18.62)
+6.  `stellar_mass` (18.14)
 
 ## Visualizations
 
