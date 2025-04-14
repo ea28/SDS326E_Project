@@ -17,7 +17,7 @@ This resulted in a final dataset of 1965 galaxies, split into 80% training (1572
 
 ### Explanatory Variables
 *   **`dust:Av`**: Dust attenuation in V-band (Mag).
-*   **`stellar_mass`**: Logarithm of the current stellar mass ($log_{10}(M_{\text{sun}})$).
+*   **`stellar_mass`**: Logarithm of the current stellar mass ($log_{10}(M_{\odot})$).
 *   **`sfr`**: Star Formation Rate ($M_{\odot}/yr$).
 *   **`mass_weighted_age`**: Mass-weighted age of the stellar population (Gyr).
 *   **`redshift`**: Galaxy redshift.
