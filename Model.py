@@ -16,7 +16,7 @@ RANDOM_SEED = 42
 
 # Data Quality Cut Thresholds
 CHISQ_PHOT_THRESHOLD = 100
-SNR_THRESHOLD = 5.5
+SNR_THRESHOLD = 5.3
 TARGET_EW_R_THRESHOLD = 500
 
 # Final set of features determined through iteration
