@@ -77,7 +77,7 @@ The mean absolute SHAP values for all features are:
     ![Actual vs Predicted Plot](actual_vs_predicted.png)
 
 *   **SHAP Feature Importance (Bar Plot):**
-    ![SHAP Feature Importance Bar Plot](shap_summary_bar_best_model.png)
+    ![SHAP Feature Importance Bar Plot](shap_feature_importance_bar.png)
 
 *   **SHAP Summary Plot (Dot Plot):**
-    ![SHAP Summary Dot Plot](shap_summary_dot_best_model.png)
+    ![SHAP Summary Dot Plot](shap_summary_dot_plot.png)
